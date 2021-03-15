@@ -105,22 +105,22 @@ nmap ф a
 nmap в d
 
 " Линия статуса: конфигурация
-set noshowmode " Табличка --INSERT-- больше не выводится на экран
-set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'iceberg',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ }
+"set noshowmode " Табличка --INSERT-- больше не выводится на экран
+"set laststatus=2
+"let g:lightline = {
+"      \ 'colorscheme': 'iceberg',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ 'component_function': {
+"      \   'gitbranch': 'fugitive#head'
+"      \ },
+"      \ }
 " Делаем линейку для отображения на какой мы строке и сколько расстояния до
 " других строк в **NeoVim**
-set number
-set ruler
+"set number
+"set ruler
 " Делаем Vim более функциональным
 set nocompatible
 
